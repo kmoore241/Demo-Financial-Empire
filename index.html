@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Financial Empire - Advanced trading platform with AI-powered bots, real-time analytics, and institutional-grade security for modern investors."
+    />
+    <meta
+      name="keywords"
+      content="trading, cryptocurrency, stocks, AI trading, financial platform, portfolio management"
+    />
+    <meta name="author" content="Financial Empire" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Financial Empire Trading Platform" />
+    <meta
+      property="og:description"
+      content="Advanced trading platform with AI-powered bots and real-time analytics"
+    />
+    <meta property="og:url" content="https://financialempire.trading" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Financial Empire Trading Platform"
+    />
+    <meta
+      property="twitter:description"
+      content="Advanced trading platform with AI-powered bots and real-time analytics"
+    />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#10b981" />
+    <meta name="msapplication-TileColor" content="#0f172a" />
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Financial Empire" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/client/global.css" as="style" />
+
+    <title>Financial Empire - Advanced Trading Platform</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/client/App.tsx"></script>
+
+    <!-- Error handling for unsupported browsers -->
+    <noscript>
+      <div
+        style="
+          text-align: center;
+          padding: 50px;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <h1>JavaScript Required</h1>
+        <p>
+          Financial Empire requires JavaScript to function properly. Please
+          enable JavaScript in your browser settings.
+        </p>
+      </div>
+    </noscript>
+  </body>
+</html>
