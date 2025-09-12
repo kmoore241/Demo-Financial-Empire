@@ -1,11 +1,10 @@
-[build]
-  command = "npm run build:client"
-  functions = "netlify/functions"
+build.command: npm run build:client
+publish: /opt/build/repo/dist/spa
+functions.*.external_node_modules = ["express"]
   publish = "dist/spa"
 
 
 [functions]
-  external_node_modules = ["express"]
   node_bundler = "esbuild"
   
 [[redirects]]
