@@ -18,8 +18,6 @@ import {
 } from "@/lib/performance";
 import { lazy, Suspense, useEffect } from "react";
 import Navigation from "./components/Navigation";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { preloadCriticalRoutes, updatePageMetadata } from "./lib/routes";
 import { useLocation } from "react-router-dom";
@@ -33,6 +31,8 @@ import ProtectedRoute from "./components/Routes/ProtectedRoute";
 
 // Lazy load heavy components for better performance with retry logic
 const Dashboard = lazyWithRetry(() => import("./pages/Dashboard"));
+const Index = lazyWithRetry(() => import("./pages/Index"));
+const NotFound = lazyWithRetry(() => import("./pages/NotFound"));
 const TradeHistory = lazyWithRetry(() => import("./pages/TradeHistory"));
 const LMSPage = lazyWithRetry(() => import("./pages/LMSPage"));
 const QuizPage = lazyWithRetry(() => import("./pages/QuizPage"));
